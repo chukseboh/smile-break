@@ -1,0 +1,100 @@
+.book {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+  .book img {
+    margin-right: 20px;
+    max-height: 150px;
+  }
+
+  .section-divider {
+    margin: 40px 0;
+    height: 2px;
+    background: linear-gradient(to right, #ccc, #666, #ccc);
+    border-radius: 1px;
+  }
+
+  /* Base styles */
+body {
+  font-family: 'Georgia', serif;
+  background-color: #fdfaf6;
+  color: #2c2c2c;
+  margin: 0;
+  padding: 2rem;
+  line-height: 1.6;
+}
+
+h1 {
+  text-align: center;
+  color: #3b2f2f;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  max-width: 800px;
+  margin: 0.5rem auto;
+  font-size: 1.05rem;
+  text-align: left;
+}
+
+/* Sort links */
+p a {
+  color: #6a4e42;
+  text-decoration: underline;
+}
+
+p a:hover {
+  color: #3b2f2f;
+}
+
+/* Divider line */
+.section-divider {
+  border-top: 2px solid #ccc;
+  margin: 2rem auto;
+  width: 80%;
+}
+
+/* Book display */
+.book {
+  display: flex;
+  align-items: flex-start;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  padding: 1rem;
+  margin: 1.5rem auto;
+  max-width: 800px;
+  transition: transform 0.2s ease;
+}
+
+.book:hover {
+  transform: scale(1.02);
+}
+
+/* Cover image */
+.book img {
+  max-width: 120px;
+  height: auto;
+  margin-right: 1rem;
+  border-radius: 6px;
+}
+
+/* Book info */
+.book div {
+  flex: 1;
+}
+
+.book h2 {
+  margin: 0 0 0.3rem;
+  color: #3b2f2f;
+}
+
+.book p {
+  margin: 0.2rem 0;
+}
+
+  

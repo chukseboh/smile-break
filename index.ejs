@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+  <title>Books I Intend to Read</title>
+</head>
+<body>
+  <h1>Good Books I Intend to Read</h1>
+  <p>
+    This is a basic website where I keep books I could come back to in the future.  
+    I'm getting into my reading phase, and this will be my collection.  
+    I am referencing my books from recommendations of 
+    <a href="https://sive.rs/book" target="_blank" rel="noopener noreferrer"><strong>Derek Sivers</strong> </a>.
+  </p>
+  
+  <p>
+    You can sort books by 
+    <a href="/?sort=title">title</a> and 
+    <a href="/?sort=rating">ratings</a>.
+  </p>
+
+  <div class="section-divider"></div>
+
+  <% books.forEach(book => { %>
+    <div class="book">
+      <img src="https://covers.openlibrary.org/b/isbn/<%= book.isbn %>-M.jpg" alt="Cover of <%= book.title %>" />
+      <div>
+        <h2><%= book.title %></h2>
+        <p><strong>Author:</strong> <%= book.author %></p>
+        <p><strong>ISBN:</strong><%= book.isbn %></p>
+        <p><strong>Rating:</strong> <%= book.rating %> / 10</p>
+      </div>
+    </div>
+  <% }) %>
+</body>
+</html>
